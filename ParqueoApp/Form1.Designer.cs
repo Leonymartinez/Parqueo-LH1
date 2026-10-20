@@ -40,6 +40,7 @@
             lblTitulo.AutoSize = true;
             lblTitulo.BackColor = SystemColors.Control;
             lblTitulo.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblTitulo.ForeColor = SystemColors.ControlDarkDark;
             lblTitulo.Location = new Point(262, 24);
             lblTitulo.Name = "lblTitulo";
             lblTitulo.Size = new Size(329, 25);
@@ -48,36 +49,40 @@
             // 
             // btnVehiculos
             // 
-            btnVehiculos.Location = new Point(290, 115);
+            btnVehiculos.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnVehiculos.Location = new Point(245, 127);
             btnVehiculos.Name = "btnVehiculos";
-            btnVehiculos.Size = new Size(75, 23);
+            btnVehiculos.Size = new Size(130, 40);
             btnVehiculos.TabIndex = 1;
             btnVehiculos.Text = "Vehiculos";
             btnVehiculos.UseVisualStyleBackColor = true;
             // 
             // btnRegistros
             // 
-            btnRegistros.Location = new Point(430, 115);
+            btnRegistros.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnRegistros.Location = new Point(461, 123);
             btnRegistros.Name = "btnRegistros";
-            btnRegistros.Size = new Size(75, 23);
+            btnRegistros.Size = new Size(130, 40);
             btnRegistros.TabIndex = 2;
             btnRegistros.Text = "Registros";
             btnRegistros.UseVisualStyleBackColor = true;
             // 
             // btnClientes
             // 
-            btnClientes.Location = new Point(290, 86);
+            btnClientes.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnClientes.Location = new Point(245, 77);
             btnClientes.Name = "btnClientes";
-            btnClientes.Size = new Size(75, 23);
+            btnClientes.Size = new Size(130, 40);
             btnClientes.TabIndex = 3;
             btnClientes.Text = "Clientes";
             btnClientes.UseVisualStyleBackColor = true;
             // 
             // btnEspacios
             // 
-            btnEspacios.Location = new Point(430, 86);
+            btnEspacios.Font = new Font("Segoe UI Semibold", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnEspacios.Location = new Point(461, 77);
             btnEspacios.Name = "btnEspacios";
-            btnEspacios.Size = new Size(75, 23);
+            btnEspacios.Size = new Size(130, 40);
             btnEspacios.TabIndex = 4;
             btnEspacios.Text = "Espacios";
             btnEspacios.UseVisualStyleBackColor = true;
