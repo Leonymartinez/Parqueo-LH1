@@ -1,10 +1,10 @@
--- =====================================================
+
 -- Proyecto Final ISB-13 Programación II
 -- Sistema de control de parqueo
--- Script de creación de la base de datos
--- =====================================================
+-- Script de creación BD
 
--- 1. Crear la base de datos (si no existe)
+
+-- 1. Crear la base de datos 
 IF DB_ID('Parqueo') IS NULL
     CREATE DATABASE Parqueo;
 GO
@@ -12,7 +12,7 @@ GO
 USE Parqueo;
 GO
 
--- 2. Borrar tablas si ya existen (en orden por las llaves foráneas)
+-- 2. Borrar tablas si ya existen
 IF OBJECT_ID('Registro') IS NOT NULL DROP TABLE Registro;
 IF OBJECT_ID('Vehiculo') IS NOT NULL DROP TABLE Vehiculo;
 IF OBJECT_ID('Espacio') IS NOT NULL DROP TABLE Espacio;
@@ -64,9 +64,9 @@ CREATE TABLE Registro (
 );
 GO
 
--- =====================================================
+
 -- DATOS DE PRUEBA
--- =====================================================
+
 
 INSERT INTO Cliente (Cedula, Nombre, Telefono) VALUES
 ('1-1234-5678', 'María Rodríguez Mora', '8888-1111'),
@@ -111,9 +111,9 @@ INSERT INTO Registro (IdVehiculo, IdEspacio, HoraEntrada) VALUES
 (3, 7, '2026-10-19 07:30');
 GO
 
--- =====================================================
+
 -- CONSULTA DE PRUEBA: vehículos que están dentro del parqueo
--- =====================================================
+
 SELECT r.IdRegistro, v.Placa, v.Tipo, c.Nombre AS Cliente,
        e.Numero AS Espacio, r.HoraEntrada
 FROM Registro r
